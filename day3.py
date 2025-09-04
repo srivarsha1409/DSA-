@@ -1,18 +1,16 @@
 #array
-arr = eval(input("Enter an integer array: "))
-maximum = max(arr)
-minimum = min(arr)
-print("Maximum element in the array:", maximum)
-print("Minimum element in the array:", minimum)
+my_list = [1, 2, 3, 4, 5]
+reversed_list = my_list[::-1]
 
-#string
-s = input("Enter a string: ")
-is_palindrome = True
-for i in range(len(s) // 2):
-    if s[i] != s[-(i+1)]:
-        is_palindrome = False
-        break
-if is_palindrome:
-    print("Palindrome")
-else:
-    print("Not Palindrome")
+print(f"Original list: {my_list}")
+print(f"Reversed list: {reversed_list}")
+
+#strings
+
+my_string = "hello"
+reversed_string = ""
+for char in my_string:
+    reversed_string = char + reversed_string
+
+print(f"Original: {my_string}")
+print(f"Reversed: {reversed_string}")
